@@ -1,0 +1,70 @@
+﻿:root {
+    color-scheme: dark;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #1e2a78, #03040a 65%);
+    color: #f2f5ff;
+}
+
+main {
+    text-align: center;
+    max-width: 900px;
+    padding: 16px;
+}
+
+h1 {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+canvas {
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 6px;
+    background: linear-gradient(180deg, #03040a 0%, #020111 35%, #030408 100%);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 0 auto;
+}
+
+.info {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#status {
+    margin: 0;
+    font-weight: 500;
+}
+
+#restart {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #f2f5ff;
+    padding: 6px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#restart:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+#restart:active {
+    transform: translateY(1px);
+}
